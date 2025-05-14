@@ -16,6 +16,10 @@ class Prestamo extends Model
         'fecha_devolucion',
         'estado', // Puede ser 'prestado', 'devuelto'
     ];
+    public function devoluciones()
+    {   
+        return $this->hasOne(Devolucion::class);
+    }
 
     // Relación con Bien
     public function bien()
