@@ -13,5 +13,9 @@ protected $fillable = [
     'cantidad',
     'estado',
 ];
+public function devoluciones()
+{
+    return $this->hasManyThrough(Devolucion::class, Prestamo::class);
+}
 
 }
