@@ -6,12 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Bien extends Model
 {
-protected $fillable = [
-    'nombre',
-    'codigo',
-    'categoria',
-    'cantidad',
-    'estado',
-];
 
+    protected $fillable = [
+        'nombre',
+        'categoria',
+        'descripcion',
+        'codigo',
+        'cantidad',
+        'estado',
+    ];
 }

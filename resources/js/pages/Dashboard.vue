@@ -2,19 +2,18 @@
 import AppLayout from '@/layouts/AppLayout.vue';
 import { type BreadcrumbItem } from '@/types';
 import { Head } from '@inertiajs/vue3';
-import PlaceholderPattern from '../components/PlaceholderPattern.vue';
 import {  PackageOpen,ChartNoAxesColumn,FileSpreadsheet,Archive,PackageCheck,FileCheck,User  } from 'lucide-vue-next';
 
 const breadcrumbs: BreadcrumbItem[] = [
     {
-        title: 'Prestamo',
+        title: 'Inicio',
         href: '/dashboard',
     },
 ];
 </script>
 
 <template>
-    <Head title="Dashboard" />
+    <Head title="Inicio" />
 
     <AppLayout :breadcrumbs="breadcrumbs">
         <div class="flex h-full flex-1 flex-col gap-4 rounded-xl p-4">
